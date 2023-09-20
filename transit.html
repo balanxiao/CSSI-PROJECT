@@ -1,0 +1,111 @@
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="map.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4IagqcdeKY5vrezaPc-rptgMihb1MaCw&libraries=places"
+    async defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+
+<body class="has-navbar-fixed-top">
+  <!-- nav  -->
+
+  <nav class="navbar is-fixed-top is-danger is-spaced" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="nav-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="delivery.html">
+          Delivery Services
+        </a>
+        <a class="navbar-item" href="drugs.html">
+          Drugs
+        </a>
+        <a class="navbar-item" href="transit.html">
+          Transit Routes
+        </a>
+        <a class="navbar-item" href="ListOfHomies.html">
+          List of Homies
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+  <script type="text/javascript">
+    (function () {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>
+
+  <div></div>
+
+  <section class="hero">
+    <div class="hero-body">
+      <center>
+        <p class="title">Transit Routes</p>
+        <p class="subtitle">
+          Follow our local maps to get to your location!
+        </p>
+      </center>
+    </div>
+  </section>
+
+  <div id="wrapper">
+    <p class="subtitle" id="instruct">
+      Step 1: Click allow location on the small window (top left).
+      <br>
+      Step 2: Type in your destination.
+      <br>
+      Step 3: View your transit route.
+    </p>
+  </div>
+
+  <center>
+    <div id="time-container">
+      <p id="travel-data">
+        See your estimated time to arrive here.
+      </p>
+    </div>
+  </center>
+
+  <div class="form-container">
+    <form id="tra-box" class="box">
+      <div class="field">
+        <label class="label">Destination</label>
+        <div class="control">
+          <input id="destination" placeholder="Selected destination">
+        </div>
+      </div>
+
+      <button id="routeButton" type="button" class="button is-primary">Find my route</button>
+    </form>
+  </div>
+
+  <div id="map" style="width: auto; height: 47vh; position: relative; overflow: hidden;">
+
+  </div>
+
+</body>
+
+</html>

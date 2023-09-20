@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="screenReader.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar is-danger is-spaced has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="nav-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="delivery.html">
+          Delivery Services
+        </a>
+        <a class="navbar-item" href="drugs.html">
+          Drugs
+        </a>
+        <a class="navbar-item" href="transit.html">
+          Transit Routes
+        </a>
+        <a class="navbar-item" href="ListOfHomies.html">
+          List of Homies
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+  <script type="text/javascript">
+    (function () {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>
+<section> </section>
+  <section> </section>
+  <section> </section>
+
+  <div class="container is-widescreen">
+    <form class="box">
+      <div class="field is-grouped">
+          <div class="control is-expanded">
+            <input class = "is-expanded"id="destination" placeholder="Enter drug">
+          </div>
+<button id="drugButton" type="button" class="button is-primary is-responsive is-small">Find drugs</button>
+
+      </div>
+      <textarea class="textarea" id="textarea" placeholder="e.g. Hello world"></textarea>
+    </form>
+  </div>
+
+  <div class="columns is-centered">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-third mt-4">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/020416_hydrocodone_THUMB_LARGE.jpg?w=1155&h=840"
+              alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content has-background-danger-dark">
+          <div class="content">
+            <p class="title is-4 has-text-white-bis">1. Hydrocodone</p>
+            <p class="subtitle is-6 has-text-grey-lighter">Hydrocodone is an antitussive (cough suppressant) and narcotic analgesic agent for the treatment of moderate to moderately severe pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="columns is-centered is-variable is-5 has-text-info">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-third">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              src="https://c8.alamy.com/comp/CTG07N/simvastatin-tablets-statins-cholesterol-reducing-tablets-CTG07N.jpg"
+              alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content has-background-info-dark">
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4 has-text-white-bis">2. Simvastatin</p>
+              <p class="subtitle is-6">Simvastatin is used together with a proper diet to treat high cholesterol and triglyceride (fat) levels in the blood</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-two-third">
+        <!-- CARD -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="https://www.1800petmeds.com/dw/image/v2/BDKX_PRD/on/demandware.static/-/Sites-main/default/dwe32795db/images/large/11197_420.jpg?sw=1000&sh=1000&q=40"
+                alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">3. Lisinopril</p>
+              <p class="subtitle is-6">Lisinopril is used alone or together with other medicines to treat high blood pressure (hypertension)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

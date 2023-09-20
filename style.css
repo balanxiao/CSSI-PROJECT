@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ .textarea{
+   overflow: scroll;
+ }
+
+.navbar-brand .navbar-item {
+  background: url(homies\ logo.jpg) no-repeat center center;
+  background-size: cover;
+  width: 60px;
+  height: 60px
+}
+
+#tra-box {
+  width: 300px;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+div.form-container {
+  display: block;
+  text-align: center;
+}
+
+#wrapper{
+  display:block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#time-container {
+  padding-bottom: 20px;
+}
+
+#instruct {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+}
+
+#destination{  
+  width:155px;
+  box-sizing:border-box;
+ }
+
+.column, .card {
+	transition: 0.3s ease;
+}
+
+.column, .card:hover {
+	transform: scale(1.07);
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+.columns {
+  margin-top: 100px !important;
+}
+
+.center {
+  display: flex ;
+  justify-content: center !important;
+  align-items: center;
+}

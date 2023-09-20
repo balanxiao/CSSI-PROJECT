@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <script src="screenReader.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+  <nav class="navbar is-danger is-spaced has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id= "nav-menu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href = "delivery.html">
+        Delivery Services
+      </a>
+      <a class="navbar-item" href = "drugs.html">
+        Drugs
+      </a>
+      <a class="navbar-item" href = "transit.html">
+        Transit Routes
+      </a>
+      <a class="navbar-item" href = "ListOfHomies.html">
+        List of Homies
+      </a>
+      </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary createAccount" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+            <strong >Sign up</strong>
+          </a>
+          <a class="button is-light login">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+  <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+
+<div class = "all-cards">
+  <div class="columns">
+    <button class = "button is-large is-outlined is-primary">Press For Screen Reader</button>
+    <!-- COLUMN 1 -->
+    <div class="column is-6 is-offset-2 has-background-link has-text-centered">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href = "delivery.html">
+              <img
+                src="https://img.freepik.com/premium-vector/collection-fast-delivery-logo-templates_482077-540.jpg?w=2000"
+                alt="Placeholder image" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content has-background-danger-dark">
+          <div class="content">
+            <p class="title is-1 has-text-white-bis">Delivery Services</p>
+            <p class="subtitle is-2 has-text-grey-lighter">To Homes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columns">
+    <button class = "button is-large is-outlined is-primary">Press For Screen Reader</button>
+    <!-- COLUMN 1 -->
+    <div class="column is-6 is-offset-2 has-background-link has-text-centered">
+      <!-- CARD -->
+      <a href = "drugs.html">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href = "drugs.html">
+            <img
+              src="https://images.mid-day.com/images/images/2022/apr/Pills-a_d.jpg"
+              alt="Placeholder image" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content has-background-danger-dark">
+          <div class="content">
+            <p class="title is-1 has-text-white-bis">Drugs</p>
+            <p class="subtitle is-2 has-text-grey-lighter">Medicinal Products</p>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="columns">
+    <button class = "button is-large is-outlined is-primary">Press For Screen Reader</button>
+    <!-- COLUMN 1 -->
+    <div class="column is-6 is-offset-2 has-background-link has-text-centered">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href = "transit.html">
+            <img
+              src="https://t3.ftcdn.net/jpg/03/18/66/58/360_F_318665813_dASvsm41OsFeJZqkh0u2InH9P6ayS8Cw.jpg"
+              alt="Placeholder image" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content has-background-danger-dark">
+          <div class="content">
+            <p class="title is-1 has-text-white-bis">Transit Routes</p>
+            <p class="subtitle is-2 has-text-grey-lighter">From Here To There</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columns">
+    <button class = "button is-large is-outlined is-primary">Press For Screen Reader</button>
+    <!-- COLUMN 1 -->
+    <div class="column is-6 is-offset-2 has-background-link has-text-centered">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href = "ListOfHomies.html">
+            <img
+              src="../goats/GangsterErickson.png" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content has-background-danger-dark">
+          <div class="content">
+            <p class="title is-1 has-text-white-bis">List Of Homies</p>
+            <p class="subtitle is-2 has-text-grey-lighter">For The Lonely</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!DOCTYPE html>
+<head>
+
+</body>
+</body>
+
+</html>
